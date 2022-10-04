@@ -1,4 +1,4 @@
-<!-- Footer here --> 
+<!-- Footer here  --> 
 
 <Footer>
     <div class='col-1'>
