@@ -2,7 +2,6 @@
     <?php get_header(); ?>
 <body>
     <div class="wrapper">
-    <?php get_footer(); ?>
     <section id="about-section">
         <div class="about-left-side"></div>
             <h2>Our Passion</h2>
@@ -42,6 +41,6 @@
             <button>Make Reservation</button>
         </div>
     </section>
-
+    <?php get_footer(); ?>
 </body>
 </html>
