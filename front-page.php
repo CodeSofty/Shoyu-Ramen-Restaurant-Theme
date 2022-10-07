@@ -1,9 +1,7 @@
 <!-- Home page here -->
     <?php get_header(); ?>
-<body>
-    <div class="wrapper">
     <section id="about-section">
-        <div class="about-left-side"></div>
+        <div class="about-left-side">
             <h2>Our Passion</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                 Quae eum rerum maiores labore pariatur maxime 
@@ -12,7 +10,7 @@
             </p>
             <img src="images/about-restaurant-small.jpg" alt="interior picture of a nice restaurant">
         </div>
-        <div class="about-right-side"></div>
+        <div class="about-right-side">
                 <h2>Our Promise</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Quae eum rerum maiores labore pariatur maxime 
@@ -21,7 +19,6 @@
                 </p>
                 <img src="images/about-cooking-small.jpg" alt="a close up of cooking noodles in a pan">
             </div>
-        </div>
     </section>
     <section id="menu-section">
         <h2>RAMEN</h2>
@@ -42,5 +39,3 @@
         </div>
     </section>
     <?php get_footer(); ?>
-</body>
-</html>
