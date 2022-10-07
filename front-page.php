@@ -8,7 +8,7 @@
                 adipisci eaque ipsam quaerat assumenda accusamus rem,
                 nobis hic aperiam esse facilis laudantium dolor atque!
             </p>
-            <img src="images/about-restaurant-small.jpg" alt="interior picture of a nice restaurant">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/about-restaurant-small.jpg" alt="interior picture of a nice restaurant">
         </div>
         <div class="about-right-side">
                 <h2>Our Promise</h2>
@@ -17,7 +17,7 @@
                     adipisci eaque ipsam quaerat assumenda accusamus rem,
                     nobis hic aperiam esse facilis laudantium dolor atque!
                 </p>
-                <img src="images/about-cooking-small.jpg" alt="a close up of cooking noodles in a pan">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/about-cooking-small.jpg" alt="a close up of cooking noodles in a pan">
             </div>
     </section>
     <section id="menu-section">

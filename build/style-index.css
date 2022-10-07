@@ -1,6 +1,26 @@
 /* Custom CSS */
 
 .wrapper {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
+}
+
+html {
+    padding: 0 10px;
+}
+
+h1 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+
+@media (min-width: 650px) {
+    .wrapper {
+        width: 80%;
+    }
 }

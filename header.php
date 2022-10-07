@@ -11,7 +11,7 @@
     <div class="wrapper">
     <header> 
         <nav>
-            <span>SHOYU RAMEN</span>
+            <h1>SHOYU RAMEN</h1>
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
