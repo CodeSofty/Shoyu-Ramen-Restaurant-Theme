@@ -1,23 +1,35 @@
 <!-- Home page here -->
     <?php get_header(); ?>
     <section id="about-section">
-        <div class="about-left-side">
-            <h2>Our Passion</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Quae eum rerum maiores labore pariatur maxime 
-                adipisci eaque ipsam quaerat assumenda accusamus rem,
-                nobis hic aperiam esse facilis laudantium dolor atque!
-            </p>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/about-restaurant-small.jpg" alt="interior picture of a nice restaurant">
-        </div>
-        <div class="about-right-side">
-                <h2>Our Promise</h2>
+        <div class="about-left-side flex-row col-reverse">
+            <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-restaurant-large.jpg" alt="interior picture of a nice restaurant" media="(min-width: 650px)">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-restaurant-small.jpg" alt="interior picture of a nice restaurant" media="(min-width: 300px)">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/about-restaurant-small.jpg" alt="interior picture of a nice restaurant">
+            </picture>
+            <div class="about-text flex-col">
+                <h2>Our Passion</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Quae eum rerum maiores labore pariatur maxime 
                     adipisci eaque ipsam quaerat assumenda accusamus rem,
                     nobis hic aperiam esse facilis laudantium dolor atque!
                 </p>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/about-cooking-small.jpg" alt="a close up of cooking noodles in a pan">
+            </div>
+        </div>
+        <div class="about-right-side flex-row">
+            <div class=" about-text flex-col">
+                    <h2>Our Promise</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Quae eum rerum maiores labore pariatur maxime 
+                        adipisci eaque ipsam quaerat assumenda accusamus rem,
+                        nobis hic aperiam esse facilis laudantium dolor atque!
+                    </p>
+                </div>
+                <picture>
+                <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-cooking-large.jpg" alt="a close up of cooking noodles in a pan" media="(min-width: 650px)">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-cooking-small.jpg" alt="a close up of cooking noodles in a pan" media="(min-width: 300px)">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/about-cooking-small.jpg" alt="a close up of cooking noodles in a pan">
+                </picture>
             </div>
     </section>
     <section id="menu-section">

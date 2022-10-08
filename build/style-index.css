@@ -19,8 +19,39 @@ h2 {
     font-weight: 400;
 }
 
+header {
+    background-image: url('/wp-content/themes/shoyu-ramen/images/hero-bg-small.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.col-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
 @media (min-width: 650px) {
     .wrapper {
         width: 80%;
     }
+
+    header {
+        background-image: url('/wp-content/themes/shoyu-ramen/images/hero-bg-large.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+    }
+
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex-col {
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
