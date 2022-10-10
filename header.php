@@ -10,8 +10,8 @@
 <body>
     <div class="wrapper">
     <header> 
+    <h1 class="logo"><a href="#">SHOYU RAMEN</a></h1>
         <nav>
-            <h1>SHOYU RAMEN</h1>
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>

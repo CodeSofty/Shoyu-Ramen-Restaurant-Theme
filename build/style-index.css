@@ -7,16 +7,48 @@
 
 html {
     padding: 0 10px;
+    font-size: 16px;
 }
 
-h1 {
+body {
+    color: #616161;
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: none;
+}
+
+
+nav ul {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+
+nav ul li {
+    list-style-type: none;
+    color: white;
+    display: inline;
+    padding: 5px;
+}
+
+
+.logo {
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
+    color: white;
 }
 
 h2 {
     font-family: 'Outfit', sans-serif;
     font-weight: 400;
+    color: black;
 }
 
 header {
@@ -42,6 +74,10 @@ header {
         background-repeat: no-repeat;
         background-size: cover;
         height: 600px;
+    }
+
+    nav {
+        display: flex;
     }
 
     .flex-row {

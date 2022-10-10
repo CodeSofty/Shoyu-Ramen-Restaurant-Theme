@@ -2,7 +2,7 @@
 
 <Footer>
     <div class='col-1'>
-        <h2>SHOYU RAMEN</h2>
+    <h2 class="logo"><a href="#">SHOYU RAMEN</a></h2>
         <div>
             <address>
                 26985 Brighton Lane </br>
