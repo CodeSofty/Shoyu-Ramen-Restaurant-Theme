@@ -10,13 +10,13 @@
 <body>
     <div class="wrapper">
     <header> 
-    <h1 class="logo"><a href="#">SHOYU RAMEN</a></h1>
+    <h1 class="logo fw-bold"><a href="#">SHOYU RAMEN</a></h1>
         <nav>
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">RESERVATION</a></li>
-                <li><a href="#">HOURS & LOCATION</a></li>
+                <li class="fw-light" ><a href="#">HOME</a></li>
+                <li class="fw-light"><a href="#">ABOUT</a></li>
+                <li class="fw-light"><a href="#">RESERVATION</a></li>
+                <li class="fw-light"><a href="#">HOURS & LOCATION</a></li>
             </ul>
         </nav>
     </header>

@@ -8,7 +8,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/images/about-restaurant-small.jpg" alt="interior picture of a nice restaurant">
             </picture>
             <div class="about-text flex-col">
-                <h2>Our Passion</h2>
+                <h2 class="text-neutral-900 fs-secondary-heading fw-regular">Our Passion</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Quae eum rerum maiores labore pariatur maxime 
                     adipisci eaque ipsam quaerat assumenda accusamus rem,
@@ -18,7 +18,7 @@
         </div>
         <div class="about-right-side flex-row">
             <div class=" about-text flex-col">
-                    <h2>Our Promise</h2>
+                    <h2 class="text-neutral-900 fs-secondary-heading fw-regular">Our Promise</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                         Quae eum rerum maiores labore pariatur maxime 
                         adipisci eaque ipsam quaerat assumenda accusamus rem,
@@ -33,10 +33,10 @@
             </div>
     </section>
     <section id="menu-section">
-        <h2>RAMEN</h2>
+        <h2 class="text-neutral-900 fw-light">RAMEN</h2>
         <ul class="menu-slide-one">
             <li class="menu-item">
-                <h3>Menu Item Title</h3>
+                <h3 class="text-primary-400 fw-bold">Menu Item Title</h3>
                 <p>
                     Menu Item Description
                 <div>Menu Item Price</div>
@@ -46,8 +46,8 @@
     </section>
     <section id="reservation-section">
         <div class="reservation-bg">
-            <h2>Hungry? Make Your Dining Reservation Today!</h2>
-            <button>Make Reservation</button>
+            <h2 class="text-neutral-100 fs-primary-heading fw-bold">Hungry? Make Your Dining Reservation Today!</h2>
+            <button class="text-neutral-100 fw-bold" >Make Reservation</button>
         </div>
     </section>
     <?php get_footer(); ?>

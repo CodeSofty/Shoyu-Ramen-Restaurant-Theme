@@ -1,4 +1,4 @@
-/* Custom CSS */
+/* General Styling */
 
 .wrapper {
     width: 100%;
@@ -11,9 +11,10 @@ html {
 }
 
 body {
-    color: #616161;
-    font-family: Roboto;
-    font-weight: 300;
+    font-size: var(--fs-body);
+    font-family: var(--ff-body);
+    color: var(--clr-primary-400);
+    font-weight: var(--fw-light);
 }
 
 header {
@@ -26,29 +27,20 @@ nav {
 }
 
 
-nav ul {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 400;
-}
-
 nav ul li {
-    list-style-type: none;
-    color: white;
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-regular);
     display: inline;
     padding: 5px;
 }
 
 
 .logo {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 700;
-    color: white;
+    font-family: var(--ff-secondary);
 }
 
 h2 {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 400;
-    color: black;
+    font-family: var(--ff-secondary);
 }
 
 header {
@@ -62,6 +54,15 @@ header {
     display: flex;
     flex-direction: column-reverse;
 }
+
+
+button {
+    background-color: var(--clr-accent-400);
+    padding: .7em 1em;
+    border: none;
+    border-radius: 5px;
+}
+
 
 
 @media (min-width: 650px) {
@@ -91,3 +92,4 @@ header {
     }
     
 }
+
