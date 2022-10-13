@@ -227,13 +227,15 @@ footer > div:not(:last-child) {
         gap: 5px;
     }
 
+    footer > div:not(:last-child) {
+        display: block;
+    }
+
     .col-1 {
         flex-basis: 33%;
+        text-align: left;
     }
     
-    footer > div {
-        background-color: grey;
-    }
     
 
     .footer_hours {
