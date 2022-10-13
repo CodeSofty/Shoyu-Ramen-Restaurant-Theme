@@ -9,14 +9,31 @@
 </head>
 <body>
     <div class="wrapper">
-    <header> 
-    <h1 class="logo fw-bold"><a href="#">SHOYU RAMEN</a></h1>
-        <nav>
+    <header>
+        <div class="hero">
+            <div class="hero-centered-textbox">
+                <h2 class="hero-text text-neutral-100 fs-secondary-heading fw-bold">
+                    Tasty, locally sourced, and authentically cooked ramen dishes
+                </h2>
+                <div class="centered_button_box">
+                    <button class="text-neutral-100 fw-bold" >Make Reservation</button>
+                </div>
+            </div>
+            <nav>
+            <h1 class="logo fw-bold"><a href="#">SHOYU RAMEN</a></h1>
+            <div class="mobile-navigation">
+                <svg class="mobile-hamburger" viewBox="0 0 100 80" width="40" height="40">
+                    <rect width="70" height="10"></rect>
+                    <rect y="20" width="70" height="10"></rect>
+                    <rect y="40" width="70" height="10"></rect>
+                </svg>
+            </div>
             <ul>
-                <li class="fw-light" ><a href="#">HOME</a></li>
-                <li class="fw-light"><a href="#">ABOUT</a></li>
-                <li class="fw-light"><a href="#">RESERVATION</a></li>
-                <li class="fw-light"><a href="#">HOURS & LOCATION</a></li>
-            </ul>
-        </nav>
+                    <li class="fw-light" ><a href="#">HOME</a></li>
+                    <li class="fw-light"><a href="#">ABOUT</a></li>
+                    <li class="fw-light"><a href="#">RESERVATION</a></li>
+                    <li class="fw-light"><a href="#">HOURS & LOCATION</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>

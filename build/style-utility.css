@@ -18,8 +18,8 @@
     
     /* Font Sizes */
         --fs-body: 16px;
-        --fs-primary-heading: 30px;
-        --fs-secondary-heading: 30px;
+        --fs-primary-heading: 16px;
+        --fs-secondary-heading: 16px;
         
     /*  Font Weights  */
         --fw-light: 300; /* Roboto and Outfit*/

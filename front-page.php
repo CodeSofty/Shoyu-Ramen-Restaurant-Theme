@@ -3,9 +3,9 @@
     <section id="about-section">
         <div class="about-left-side flex-row col-reverse">
             <picture>
-                <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-restaurant-large.jpg" alt="interior picture of a nice restaurant" media="(min-width: 650px)">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-restaurant-small.jpg" alt="interior picture of a nice restaurant" media="(min-width: 300px)">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/about-restaurant-small.jpg" alt="interior picture of a nice restaurant">
+                <source srcset="<?php echo get_template_directory_uri();?>/images/about-restaurant-large.jpg" alt="interior picture of a nice restaurant" media="(min-width: 650px)">
+                <source srcset="<?php echo get_template_directory_uri();?>/images/about-restaurant-small.jpg" alt="interior picture of a nice restaurant" media="(min-width: 300px)">
+                <img src="<?php echo get_template_directory_uri();?>/images/about-restaurant-small.jpg" alt="interior picture of a nice restaurant">
             </picture>
             <div class="about-text flex-col">
                 <h2 class="text-neutral-900 fs-secondary-heading fw-regular">Our Passion</h2>
@@ -45,9 +45,11 @@
         </ul>
     </section>
     <section id="reservation-section">
-        <div class="reservation-bg">
-            <h2 class="text-neutral-100 fs-primary-heading fw-bold">Hungry? Make Your Dining Reservation Today!</h2>
-            <button class="text-neutral-100 fw-bold" >Make Reservation</button>
+        <div class="hero-centered-textbox">
+            <h2 class="hero-text text-neutral-100 fs-secondary-heading fw-bold">Hungry? Make Your Dining Reservation Today!</h2>
+            <div class="centered_button_box">
+                <button class="text-neutral-100 fw-bold" >Make Reservation</button>
+            </div>
         </div>
     </section>
     <?php get_footer(); ?>

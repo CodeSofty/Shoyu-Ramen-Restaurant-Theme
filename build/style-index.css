@@ -1,13 +1,47 @@
-/* General Styling */
+/* Layout Styles  */
 
 .wrapper {
-    width: 100%;
+    max-width: 350px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
 html {
-    padding: 0 10px;
     font-size: 16px;
+}
+
+header {
+    grid-column: span 4;
+}
+
+#about-section {
+    grid-column: span 4;
+}
+
+#menu-section {
+    grid-column: span 4;
+}
+
+#reservation-section {
+    grid-column: span 4;
+}
+
+footer {
+    grid-column: span 4;
+}
+
+
+
+
+/* General Styling */
+
+header {
+    background-image: url('/wp-content/themes/shoyu-ramen/images/hero-bg-small.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
 }
 
 body {
@@ -17,12 +51,32 @@ body {
     font-weight: var(--fw-light);
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
+
+.hero {
+    height: 100%;
+    position: relative;
+}
+
+.hero-centered-textbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.mobile-hamburger {
+    fill: var(--clr-neutral-100);
 }
 
 nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+nav ul {
     display: none;
 }
 
@@ -30,10 +84,17 @@ nav {
 nav ul li {
     font-family: var(--ff-secondary);
     font-weight: var(--fw-regular);
-    display: inline;
-    padding: 5px;
+    color: white;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
 
 .logo {
     font-family: var(--ff-secondary);
@@ -43,12 +104,14 @@ h2 {
     font-family: var(--ff-secondary);
 }
 
-header {
-    background-image: url('/wp-content/themes/shoyu-ramen/images/hero-bg-small.jpg');
+
+#reservation-section {
+    background-image: url('/wp-content/themes/shoyu-ramen/images/reservation-bg-small.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
+    position: relative;
 }
+
 
 .col-reverse {
     display: flex;
@@ -63,12 +126,52 @@ button {
     border-radius: 5px;
 }
 
+footer {
+    text-align: center;
+}
+
+footer > div:not(:last-child) {
+    display: none;
+}
 
 
-@media (min-width: 650px) {
+
+@media (min-width: 700px) {
+
+    /* Layout Styles  */
+
     .wrapper {
-        width: 80%;
+        max-width: 1100px;
+        margin: 0 auto;
+        grid-template-columns: repeat(12, 1fr);
+        
     }
+
+    header {
+        grid-column: span 12;
+    }
+
+    #about-section {
+        grid-column: span 12;
+    }
+    
+    #menu-section {
+        grid-column: span 12;
+        height: 400px;
+    }
+
+    #reservation-section {
+        grid-column: span 12;
+    }
+    
+    
+    footer {
+        grid-column: span 12;
+    }
+
+    
+
+    /* General Styles */
 
     header {
         background-image: url('/wp-content/themes/shoyu-ramen/images/hero-bg-large.jpg');
@@ -77,8 +180,26 @@ button {
         height: 600px;
     }
 
-    nav {
-        display: flex;
+    .hero-centered-textbox h2 {
+        font-size: 2rem;
+    }
+
+    .centered_button_box {
+        text-align: center;
+    }
+
+    .mobile-hamburger {
+        display: none;
+    }
+
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 5px;
     }
 
     .flex-row {
@@ -90,6 +211,40 @@ button {
         display: flex;
         flex-direction: column;
     }
+
+    #reservation-section {
+        background-image: url('/wp-content/themes/shoyu-ramen/images/reservation-bg-large.jpg');
+        height: 600px;
+    }
+    
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .col-1 {
+        flex-basis: 33%;
+    }
+    
+    footer > div {
+        background-color: grey;
+    }
+    
+
+    .footer_hours {
+        display: flex;
+        flex-direction: row;
+    } 
+
+    .footer_hours_leftside {
+        margin-right: 15px;
+    } 
+
     
 }
 
