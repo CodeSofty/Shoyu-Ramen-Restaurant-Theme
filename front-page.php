@@ -33,7 +33,7 @@
             </div>
     </section>
     <section id="menu-section">
-        <h2 class="text-neutral-900 fw-light">RAMEN</h2>
+        <h2 class="text-neutral-900 fw-light fs-secondary-heading">RAMEN</h2>
         <ul class="menu-slide-one">
             <li class="menu-item">
                 <h3 class="text-primary-400 fw-bold">Menu Item Title</h3>

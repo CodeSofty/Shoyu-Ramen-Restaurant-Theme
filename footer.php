@@ -2,7 +2,7 @@
 
 <Footer>
     <div class='col-1'>
-        <a class="logo text-neutral-900 fw-bold" href="#">SHOYU RAMEN</a>
+        <a class="logo text-neutral-900 fw-bold " href="#">SHOYU RAMEN</a>
         <div class="textbox"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Possimus accusantium quos.
         </div>

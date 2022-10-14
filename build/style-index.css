@@ -104,6 +104,10 @@ h2 {
     font-family: var(--ff-secondary);
 }
 
+.about-right-side  {
+    margin-top: 10px;
+}
+
 
 #reservation-section {
     background-image: url('/wp-content/themes/shoyu-ramen/images/reservation-bg-small.jpg');
@@ -133,7 +137,6 @@ footer {
 footer > div:not(:last-child) {
     display: none;
 }
-
 
 
 @media (min-width: 700px) {
@@ -210,6 +213,10 @@ footer > div:not(:last-child) {
     .flex-col {
         display: flex;
         flex-direction: column;
+    }
+
+    #about-section .about-text {
+        padding: 0 1rem 0 2rem;
     }
 
     #reservation-section {
