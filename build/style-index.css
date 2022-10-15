@@ -47,8 +47,8 @@ header {
 body {
     font-size: var(--fs-body);
     font-family: var(--ff-body);
-    color: var(--clr-primary-400);
     font-weight: var(--fw-light);
+    color: var(--clr-primary-400);
 }
 
 
@@ -57,12 +57,19 @@ body {
     position: relative;
 }
 
+.hero-text {
+    font-family: var(--ff-heading);
+}
+
+.logo {
+    font-family: var(--ff-heading);
+}
+
 .hero-centered-textbox {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
     text-align: center;
 }
 
@@ -84,7 +91,6 @@ nav ul {
 nav ul li {
     font-family: var(--ff-secondary);
     font-weight: var(--fw-regular);
-    color: white;
 }
 
 a {
@@ -96,13 +102,6 @@ ul {
     list-style: none;
 }
 
-.logo {
-    font-family: var(--ff-secondary);
-}
-
-h2 {
-    font-family: var(--ff-secondary);
-}
 
 .about-right-side  {
     margin-top: 10px;
@@ -216,7 +215,7 @@ footer > div:not(:last-child) {
     }
 
     #about-section .about-text {
-        padding: 0 1rem 0 2rem;
+        padding: 0 2rem;
     }
 
     #reservation-section {
@@ -226,12 +225,10 @@ footer > div:not(:last-child) {
     
 
     footer {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 5px;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 2fr 2fr 1fr;
+        gap: 1em;
     }
 
     footer > div:not(:last-child) {
@@ -239,10 +236,12 @@ footer > div:not(:last-child) {
     }
 
     .col-1 {
-        flex-basis: 33%;
         text-align: left;
     }
-    
+
+    .col-1 > * {
+        margin-bottom: 15px;
+    }
     
 
     .footer_hours {

@@ -2,14 +2,14 @@
 
 <Footer>
     <div class='col-1'>
-        <a class="logo text-neutral-900 fw-bold " href="#">SHOYU RAMEN</a>
+        <a class="logo text-accent-800 fw-bold" href="#">SHOYU RAMEN</a>
         <div class="textbox"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Possimus accusantium quos.
         </div>
     </div>
 
     <div class="col-1">
-        <h3 class="text-primary-400 fw-bold">Business Hours </h3>
+        <h3 class="text-accent-800 fw-bold">Business Hours </h3>
         <div class="footer_hours"> 
             <div class="footer_hours_leftside">
                 Monday - Friday</br>
@@ -26,12 +26,17 @@
     </div>
 
         <div class="col-1">
-            <h3 class="text-primary-400 fw-bold">Contact Us</h3>
+            <h3 class="text-accent-800 fw-bold">Contact Us</h3>
             <address>
                 26985 Brighton Lane </br>
                 Lake Forest, CA 92630
             </address>
             <div>(444) 444-4444</div>
+            <div class="social-icons">
+                <!-- <img src="<?php echo get_template_directory_uri();?>/images/facebook.svg">
+                <img src="<?php echo get_template_directory_uri();?>/images/twitter.svg">
+                <img src="<?php echo get_template_directory_uri();?>/images/instagram.svg"> -->
+            </div>
         </div>
     </div>
 </Footer>

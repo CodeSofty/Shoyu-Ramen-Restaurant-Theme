@@ -3,10 +3,11 @@
 :root {
 
     /*   Colors  */
-        --clr-primary-400:  hsl(0, 0, 38%); /*  Body text    */
+        --clr-primary-400:  rgb(162, 162, 162); /*  Body text    */
         --clr-neutral-100: hsl(0, 0%, 100%); /*   Nav and Header Logo   */
-        --clr-neutral-900: hsl(0, 0, 0%);   /*   Headings and Footer Logo  */
+        --clr-neutral-900: hsl(0, 0%, 0%);   /*   Headings and Footer Logo  */
         --clr-accent-400: 	hsl(4, 62%, 53%);
+        --clr-accent-800:  hsl(0, 0%, 38%); /*  Body text    */
     
     /*   Font Families   */
         --ff-primary: Roboto;
@@ -17,21 +18,24 @@
         --ff-heading: var(--ff-secondary);
     
     /* Font Sizes */
-        --fs-body: 16px;
-        --fs-primary-heading: 16px;
-        --fs-secondary-heading: 30px;
+        --fs-body: 1rem;
+        --fs-primary-heading: 3rem;
+        --fs-secondary-heading: 2rem;
+        --fs-tertiary-heading: .5rem;
         
     /*  Font Weights  */
         --fw-light: 300; /* Roboto and Outfit*/
         --fw-regular: 400; /* Outfit only */
         --fw-bold: 700;     /* Roboto and Outfit */
-    
+        
+    /*  Padding */
+    --mg-large: 20px;
     
     }
-    
 
 
 /* Utility Classes */
+
 
 .text-primary-400 {
     color: var(--clr-primary-400);
@@ -41,9 +45,12 @@
     color: var(--clr-neutral-100);
 }
 
-
 .text-neutral-900 {
     color: var(--clr-neutral-900);
+}
+
+.text-accent-800 {
+    color: var(--clr-accent-800);
 }
 
 .fs-primary-heading{
@@ -51,6 +58,10 @@
 }
 .fs-secondary-heading{
     font-size: var(--fs-secondary-heading);
+}
+
+.fs-tertiary-heading{
+    font-size: var(--fs-tertiary-heading);
 }
 
 
@@ -66,4 +77,9 @@
 
 .fw-bold {
     font-weight: var(--fw-bold);
+}
+
+
+.margin-large {
+    padding: var(--mg-large);
 }

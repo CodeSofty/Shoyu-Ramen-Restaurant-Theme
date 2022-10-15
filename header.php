@@ -12,7 +12,7 @@
     <header>
         <div class="hero">
             <div class="hero-centered-textbox">
-                <h2 class="hero-text text-neutral-100 fs-secondary-heading fw-bold">
+                <h2 class="hero-text text-neutral-100 fs-secondary-heading fw-bold margin-large">
                     Tasty, locally sourced, and authentically cooked ramen dishes
                 </h2>
                 <div class="centered_button_box">

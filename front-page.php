@@ -33,7 +33,7 @@
             </div>
     </section>
     <section id="menu-section">
-        <h2 class="text-neutral-900 fw-light fs-secondary-heading">RAMEN</h2>
+        <h2 class="text-neutral-900  fw-light fs-primary-heading">RAMEN</h2>
         <ul class="menu-slide-one">
             <li class="menu-item">
                 <h3 class="text-primary-400 fw-bold">Menu Item Title</h3>
@@ -46,7 +46,7 @@
     </section>
     <section id="reservation-section">
         <div class="hero-centered-textbox">
-            <h2 class="hero-text text-neutral-100 fs-secondary-heading fw-bold">Hungry? Make Your Dining Reservation Today!</h2>
+            <h2 class="hero-text text-neutral-100 fs-primary-heading fw-bold margin-large">Hungry? Make Your Dining Reservation Today!</h2>
             <div class="centered_button_box">
                 <button class="text-neutral-100 fw-bold" >Make Reservation</button>
             </div>
