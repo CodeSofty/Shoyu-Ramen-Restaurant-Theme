@@ -16,9 +16,9 @@ header {
     grid-column: span 4;
 }
 
-#about-section {
+/* #about-section {
     grid-column: span 4;
-}
+} */
 
 #menu-section {
     grid-column: span 4;
@@ -152,9 +152,27 @@ footer > div:not(:last-child) {
     header {
         grid-column: span 12;
     }
-
+    
     #about-section {
         grid-column: span 12;
+    }
+
+
+    .about-right-side {
+        background-color: grey;
+        border: 2px solid red;
+        height: 256px;
+    }
+
+
+    .about-right-side img {
+        background-color: grey;
+        border: 2px solid red;
+        height: 100%;
+    }
+
+    .about-right-side .about-text {
+        width: 50%;
     }
     
     #menu-section {
