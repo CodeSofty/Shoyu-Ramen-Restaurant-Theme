@@ -8,9 +8,6 @@
     gap: 20px;
 }
 
-html {
-    font-size: 16px;
-}
 
 header {
     grid-column: span 4;
@@ -66,6 +63,7 @@ body {
     display: none;
 }
 
+
 .logo {
     font-family: var(--ff-heading);
 }
@@ -82,10 +80,14 @@ body {
     fill: var(--clr-neutral-100);
 }
 
+.mobile-hamburger:hover {
+    cursor: pointer;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 0 5px;
+    padding: 5px;
 }
 
 nav ul {
@@ -112,6 +114,9 @@ ul {
     margin-top: 10px;
 }
 
+.about-text {
+    margin: 0 0 1.5rem 0;
+}
 
 #reservation-section {
     background-image: url('/wp-content/themes/shoyu-ramen/images/reservation-bg-small.jpg');
@@ -119,6 +124,20 @@ ul {
     background-size: cover;
     position: relative;
 }
+
+#menu-section{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu-wrapper {
+    gap: 0 5rem;
+}
+
+.menu-wrapper li {
+    padding: 2em;
+}
+
 
 
 .col-reverse {
@@ -138,10 +157,13 @@ footer {
     text-align: center;
 }
 
-footer > div:not(:last-child) {
-    display: none;
+footer > div {
+    padding: 10px;
 }
 
+footer > div:not(:last-child)  {
+    display: none;
+}
 
 @media (min-width: 700px) {
 
@@ -164,7 +186,7 @@ footer > div:not(:last-child) {
     
     #menu-section {
         grid-column: span 12;
-        height: 400px;
+
     }
 
     #reservation-section {
@@ -184,10 +206,6 @@ footer > div:not(:last-child) {
         background-repeat: no-repeat;
         background-size: cover;
         height: 600px;
-    }
-
-    .hero-centered-textbox h2 {
-        font-size: 2rem;
     }
 
     .centered_button_box {
@@ -236,7 +254,11 @@ footer > div:not(:last-child) {
     #about-section .about-text {
         text-align: justify;
         max-width: 500px;
-        padding: 0 2rem;
+        padding: 0 .5rem;
+    }
+
+    .menu-wrapper{
+        display: flex;
     }
 
 

@@ -40,19 +40,90 @@
     </section>
     <section id="menu-section">
         <h2 class="text-neutral-900  fw-light fs-primary-heading">RAMEN</h2>
-        <ul class="menu-slide-one">
-            <li class="menu-item">
-                <h3 class="text-primary-400 fw-bold">Menu Item Title</h3>
-                <p>
-                    Menu Item Description
-                <div>Menu Item Price</div>
-                </p>
-            </li>
-        </ul>
+        <div class='menu-wrapper'>
+            <div class='menu-list-left'> 
+                <ul>
+                    <li>
+                        <h3 class='menu-item-title text-primary-400 fw-bold'>Tori Paitan</h3>
+                        <div class='menu-item-description'>rich chicken broth / pork belly / bean sprouts / fried garlic / ajitama / negi</div>
+                        <div class='menu-item-price'>$15.00</div>
+                    </li>
+                    <li>
+                        <h3 class='menu-item-title text-primary-400 fw-bold'>Spicy Miso</h3>
+                        <div class='menu-item-description'>rich chicken broth / roasted garlic miso / spicy pork meatballs / corn / bean sprouts / ajitama / goma / negi</div>
+                        <div class='menu-item-price'>$14.00</div>
+                    </li>
+                    <li>
+                        <h3 class='menu-item-title text-primary-400 fw-bold'>Yasai (V)</h3>
+                        <div class='menu-item-description'>vegan broth / tofu / roasted tomato / mushrooms / fried shallots / negi / (gf noodles available)</div>
+                        <div class='menu-item-price'>$16.00</div>
+                    </li>
+                    <li>
+                        <h3 class='menu-item-title text-primary-400 fw-bold'>Kare Mazemen</h3>
+                        <div class='menu-item-description'>thick noodles / brothless / house-made curry sauce / chicken confit / beet pickled ginger / negi / goma</div>
+                        <div class='menu-item-price'>$16.00</div>
+                    </li>
+                    <li>
+                        <h3 class='menu-item-title text-primary-400 fw-bold'>Mushroom Mazemen (V)</h3>
+                        <div class='menu-item-description'>thick noodles / brothless / mushroom sauce / beet pickled ginger / negi / fried shallots</div>
+                        <div class='menu-item-price'>$14.00</div>
+                    </li>
+                    <li>
+                        <h3 class='menu-item-title text-primary-400 fw-bold'>Chilled Ramen</h3>
+                        <div class='menu-item-description'>chilled noodles / brothless / sesame dressing / shrimp / surimi / mustard greens / negi / fried shallots / vegan available</div>
+                        <div class='menu-item-price'>$7.00</div>
+                    </li>
+                    <li>
+                        <h3 class='menu-item-title text-primary-400 fw-bold'>Kid Ramen</h3>
+                        <div class='menu-item-description'>rich chicken broth & noodles only / vegan available</div>
+                        <div class='menu-item-price'>$6.00</div>
+                    </li>
+                </ul>
+            </div>
+            <div class='menu-list-right'> 
+                <ul>
+                    <li>
+                        <h3 class='menu-item-title text-primary-400 fw-bold'>Tori Paitan</h3>
+                        <div class='menu-item-description'>rich chicken broth / pork belly / bean sprouts / fried garlic / ajitama / negi</div>
+                        <div class='menu-item-price'>$15.00</div>
+                    </li>
+                    <li>
+                        <h3 class='menu-item-title text-primary-400 fw-bold'>Spicy Miso</h3>
+                        <div class='menu-item-description'>rich chicken broth / roasted garlic miso / spicy pork meatballs / corn / bean sprouts / ajitama / goma / negi</div>
+                        <div class='menu-item-price'>$14.00</div>
+                    </li>
+                    <li>
+                        <h3 class='menu-item-title text-primary-400 fw-bold'>Yasai (V)</h3>
+                        <div class='menu-item-description'>vegan broth / tofu / roasted tomato / mushrooms / fried shallots / negi / (gf noodles available)</div>
+                        <div class='menu-item-price'>$16.00</div>
+                    </li>
+                    <li>
+                        <h3 class='menu-item-title text-primary-400 fw-bold'>Kare Mazemen</h3>
+                        <div class='menu-item-description'>thick noodles / brothless / house-made curry sauce / chicken confit / beet pickled ginger / negi / goma</div>
+                        <div class='menu-item-price'>$16.00</div>
+                    </li>
+                    <li>
+                        <h3 class='menu-item-title text-primary-400 fw-bold'>Mushroom Mazemen (V)</h3>
+                        <div class='menu-item-description'>thick noodles / brothless / mushroom sauce / beet pickled ginger / negi / fried shallots</div>
+                        <div class='menu-item-price'>$14.00</div>
+                    </li>
+                    <li>
+                        <h3 class='menu-item-title text-primary-400 fw-bold'>Chilled Ramen</h3>
+                        <div class='menu-item-description'>chilled noodles / brothless / sesame dressing / shrimp / surimi / mustard greens / negi / fried shallots / vegan available</div>
+                        <div class='menu-item-price'>$7.00</div>
+                    </li>
+                    <li>
+                        <h3 class='menu-item-title text-primary-400 fw-bold'>Kid Ramen</h3>
+                        <div class='menu-item-description'>rich chicken broth & noodles only / vegan available</div>
+                        <div class='menu-item-price'>$6.00</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
     <section id="reservation-section">
         <div class="hero-centered-textbox">
-            <h2 class="hero-text text-neutral-100 fs-primary-heading fw-bold margin-large">Hungry? Make Your Dining Reservation Today!</h2>
+            <h2 class="hero-text text-neutral-100 fs-primary-heading fw-bold">Hungry? Make Your Dining Reservation Today!</h2>
             <div class="centered_button_box">
                 <button class="text-neutral-100 fw-bold" >Make Reservation</button>
             </div>
