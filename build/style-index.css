@@ -58,7 +58,12 @@ body {
 }
 
 .hero-text {
+    display: none;
     font-family: var(--ff-heading);
+}
+
+.hero-action-bttn {
+    display: none;
 }
 
 .logo {
@@ -201,6 +206,14 @@ footer > div:not(:last-child) {
     nav ul li {
         display: inline;
         padding: 5px;
+    }
+
+    .hero-text {
+        display: block;
+    }
+
+    .hero-action-bttn {
+        display: inline;
     }
 
     .flex-row {

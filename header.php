@@ -16,7 +16,7 @@
                     Tasty, locally sourced, and authentically cooked ramen dishes
                 </h2>
                 <div class="centered_button_box">
-                    <button class="text-neutral-100 fw-bold" >Make Reservation</button>
+                    <button class="hero-action-bttn text-neutral-100 fw-bold" >Make Reservation</button>
                 </div>
             </div>
             <nav>
