@@ -10,7 +10,7 @@
                 </picture>
             </div>
             <div class="about-text flex-col">
-                <h2 class="text-neutral-900 fs-secondary-heading fw-regular">Our Passion</h2>
+                <h2 class="about-heading text-neutral-900 fs-secondary-heading fw-regular">Our Passion</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida felis at tellus tempus convallis 
                     maximus a dui. Fusce porta urna vitae ullamcorper facilisis. Fusce ipsum felis, tempus quis cursus eleifend, 
                     accumsan non sem. In auctor ac leo in imperdiet. Etiam rutrum, dolor quis porta dignissim, sapien leo porta 
@@ -21,7 +21,7 @@
         </div>
         <div class="about-right-side flex-row">
             <div class=" about-text flex-col">
-                    <h2 class="text-neutral-900 fs-secondary-heading fw-regular">Our Promise</h2>
+                    <h2 class="about-heading text-neutral-900 fs-secondary-heading fw-regular">Our Promise</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida felis at tellus tempus convallis 
                         maximus a dui. Fusce porta urna vitae ullamcorper facilisis. Fusce ipsum felis, tempus quis cursus eleifend, 
                         accumsan non sem. In auctor ac leo in imperdiet. Etiam rutrum, dolor quis porta dignissim, sapien leo porta 
@@ -39,7 +39,7 @@
             </div>
     </section>
     <section id="menu-section">
-        <h2 class="text-neutral-900  fw-light fs-primary-heading">RAMEN</h2>
+        <h2 class="text-neutral-900  fw-light fs-secondary-heading">RAMEN</h2>
         <div class='menu-wrapper'>
             <div class='menu-list-left'> 
                 <ul>

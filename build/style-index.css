@@ -114,6 +114,10 @@ ul {
     margin-top: 10px;
 }
 
+.about-heading {
+    margin-bottom: .5rem;
+}
+
 .about-text {
     margin: 0 0 1.5rem 0;
 }
@@ -123,7 +127,13 @@ ul {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    height: 300px;
 }
+
+#reservation-section .hero-text {
+    display: inline;
+}
+
 
 #menu-section{
     margin: 0 auto;
@@ -163,6 +173,17 @@ footer > div {
 
 footer > div:not(:last-child)  {
     display: none;
+}
+
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-icon_container  {
+    border: red 2px solid;
+    padding: 5px;
 }
 
 @media (min-width: 700px) {

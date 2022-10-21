@@ -19,18 +19,21 @@
     
     /* Font Sizes */
         --fs-body: 1rem;
-        --fs-primary-heading: 2.5rem;
+        --fs-primary-heading: 1.5rem;
         --fs-secondary-heading: 2rem;
         --fs-tertiary-heading: .5rem;
-        
+
     /*  Font Weights  */
         --fw-light: 300; /* Roboto and Outfit*/
         --fw-regular: 400; /* Outfit only */
         --fw-bold: 700;     /* Roboto and Outfit */
-        
-    /*  Padding */
-    --mg-large: 20px;
+    }
     
+    @media (min-width: 700px) {
+        :root {
+            --fs-primary-heading: 3rem;
+            --fs-secondary-heading: 2.5rem;
+        }
     }
 
 
