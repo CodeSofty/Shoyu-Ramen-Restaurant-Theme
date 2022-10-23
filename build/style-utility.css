@@ -39,6 +39,7 @@
 
 /* Utility Classes */
 
+/* Colors Classes */
 
 .text-primary-400 {
     color: var(--clr-primary-400);
@@ -56,6 +57,8 @@
     color: var(--clr-accent-800);
 }
 
+/* Font Size Classes */
+
 .fs-primary-heading{
     font-size: var(--fs-primary-heading);
 }
@@ -68,7 +71,7 @@
 }
 
 
-
+/* Font Weight Classes */
 
 .fw-light {
     font-weight: var(--fw-light);
@@ -80,9 +83,4 @@
 
 .fw-bold {
     font-weight: var(--fw-bold);
-}
-
-
-.margin-large {
-    padding: var(--mg-large);
 }

@@ -1,4 +1,4 @@
-<!-- Home page here -->
+<!-- About -->
     <?php get_header(); ?>
     <section id="about-section">
         <div class="about-left-side flex-row col-reverse">
@@ -38,6 +38,8 @@
                 </div>
             </div>
     </section>
+
+<!-- Menu -->
     <section id="menu-section">
         <h2 class="text-neutral-900  fw-light fs-secondary-heading">RAMEN</h2>
         <div class='menu-wrapper'>
@@ -121,6 +123,7 @@
             </div>
         </div>
     </section>
+<!-- Reservation -->
     <section id="reservation-section">
         <div class="hero-centered-textbox">
             <h2 class="hero-text text-neutral-100 fs-primary-heading fw-bold">Hungry? Make Your Dining Reservation Today!</h2>
