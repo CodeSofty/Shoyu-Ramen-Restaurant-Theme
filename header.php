@@ -20,20 +20,30 @@
                 </div>
             </div>
             <nav>
-            <h1 class="logo fw-bold"><a href="#">SHOYU RAMEN</a></h1>
-            <div class="mobile-navigation">
-                <svg class="mobile-hamburger" viewBox="0 0 100 80" width="40" height="40">
-                    <rect width="70" height="10"></rect>
-                    <rect y="20" width="70" height="10"></rect>
-                    <rect y="40" width="70" height="10"></rect>
-                </svg>
-            </div>
-            <ul>
+                <h1 class="logo fw-bold"><a href="#">SHOYU RAMEN</a></h1>
+                <div class="mobile-navigation">
+                    <svg class="mobile-hamburger" viewBox="0 0 100 80" width="40" height="40">
+                        <rect width="70" height="10"></rect>
+                        <rect y="20" width="70" height="10"></rect>
+                        <rect y="40" width="70" height="10"></rect>
+                    </svg>
+                </div>
+                <ul>
                     <li class="fw-light" ><a href="#">HOME</a></li>
                     <li class="fw-light"><a href="#">ABOUT</a></li>
                     <li class="fw-light"><a href="#">RESERVATION</a></li>
                     <li class="fw-light"><a href="#">HOURS & LOCATION</a></li>
                 </ul>
+            </nav>
+            <nav>
+                <div id='mobile-nav-container'>
+                    <ul class='mobile-nav-list'>
+                        <li class="fw-light" ><a href="#">HOME</a></li>
+                        <li class="fw-light"><a href="#">ABOUT</a></li>
+                        <li class="fw-light"><a href="#">RESERVATION</a></li>
+                        <li class="fw-light"><a href="#">HOURS & LOCATION</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>

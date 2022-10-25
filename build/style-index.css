@@ -48,6 +48,29 @@ body {
     color: var(--clr-primary-400);
 }
 
+#mobile-nav-container {
+    height: 100vh;
+    width: 100%;
+    background-color: darkslategrey;
+    z-index: 1000;
+    position: relative;
+}
+
+#mobile-nav-container .mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+}
+
+.mobile-nav-list li {
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
 
 .hero {
     height: 100%;
@@ -179,11 +202,13 @@ footer > div:not(:last-child)  {
 .social-icons {
     display: flex;
     flex-direction: row;
+    max-width: 30%;
+    margin: auto;
 }
 
 .social-icon_container  {
-    border: red 2px solid;
     padding: 5px;
+    
 }
 
 
@@ -318,7 +343,17 @@ footer > div:not(:last-child)  {
     .footer_hours_leftside {
         margin-right: 15px;
     } 
+    .social-icons {
+        max-width: 80%;
+        margin: 0;
+    }
 
     
+}
+
+@media (min-width: 900px) {
+    .social-icons {
+        max-width: 50%;
+    }
 }
 
