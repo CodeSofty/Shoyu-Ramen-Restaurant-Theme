@@ -1,3 +1,7 @@
+/* Mobile */
+
+
+
 /* Layout Styles  */
 
 .wrapper {
@@ -212,6 +216,8 @@ footer > div:not(:last-child)  {
 }
 
 
+/* Tablet and Larger */
+
 @media (min-width: 700px) {
 
     /* Layout Styles  */
@@ -350,6 +356,7 @@ footer > div:not(:last-child)  {
 
     
 }
+
 
 @media (min-width: 900px) {
     .social-icons {
