@@ -46,78 +46,40 @@
             <div class='menu-list-left'> 
                 <ul>
                     <li>
-                        <h3 class='menu-item-title text-primary-400 fw-bold'>Tori Paitan</h3>
-                        <div class='menu-item-description'>rich chicken broth / pork belly / bean sprouts / fried garlic / ajitama / negi</div>
-                        <div class='menu-item-price'>$15.00</div>
-                    </li>
-                    <li>
-                        <h3 class='menu-item-title text-primary-400 fw-bold'>Spicy Miso</h3>
-                        <div class='menu-item-description'>rich chicken broth / roasted garlic miso / spicy pork meatballs / corn / bean sprouts / ajitama / goma / negi</div>
-                        <div class='menu-item-price'>$14.00</div>
-                    </li>
-                    <li>
-                        <h3 class='menu-item-title text-primary-400 fw-bold'>Yasai (V)</h3>
-                        <div class='menu-item-description'>vegan broth / tofu / roasted tomato / mushrooms / fried shallots / negi / (gf noodles available)</div>
-                        <div class='menu-item-price'>$16.00</div>
-                    </li>
-                    <li>
-                        <h3 class='menu-item-title text-primary-400 fw-bold'>Kare Mazemen</h3>
-                        <div class='menu-item-description'>thick noodles / brothless / house-made curry sauce / chicken confit / beet pickled ginger / negi / goma</div>
-                        <div class='menu-item-price'>$16.00</div>
-                    </li>
-                    <li>
-                        <h3 class='menu-item-title text-primary-400 fw-bold'>Mushroom Mazemen (V)</h3>
-                        <div class='menu-item-description'>thick noodles / brothless / mushroom sauce / beet pickled ginger / negi / fried shallots</div>
-                        <div class='menu-item-price'>$14.00</div>
-                    </li>
-                    <li>
-                        <h3 class='menu-item-title text-primary-400 fw-bold'>Chilled Ramen</h3>
-                        <div class='menu-item-description'>chilled noodles / brothless / sesame dressing / shrimp / surimi / mustard greens / negi / fried shallots / vegan available</div>
-                        <div class='menu-item-price'>$7.00</div>
-                    </li>
-                    <li>
-                        <h3 class='menu-item-title text-primary-400 fw-bold'>Kid Ramen</h3>
-                        <div class='menu-item-description'>rich chicken broth & noodles only / vegan available</div>
-                        <div class='menu-item-price'>$6.00</div>
+                        <?php 
+                        $dishes = array(
+                            'post_type' =>'dish'
+                        );
+                        $menu_query = new WP_Query($dishes);
+
+                        // Loop through posts and display them on the menu list
+
+                        while($menu_query->have_posts()) { 
+                            $menu_query->the_post(); ?>
+                            <h3 class='menu-item-title text-primary-400 fw-bold'><?php the_title(); ?></h3>
+                            <div class='menu-item-description'><?php the_excerpt();?></div>
+                            <div class='menu-item-price'>$15.00</div>
+                        <?php } ?>
                     </li>
                 </ul>
             </div>
             <div class='menu-list-right'> 
                 <ul>
                     <li>
-                        <h3 class='menu-item-title text-primary-400 fw-bold'>Tori Paitan</h3>
-                        <div class='menu-item-description'>rich chicken broth / pork belly / bean sprouts / fried garlic / ajitama / negi</div>
-                        <div class='menu-item-price'>$15.00</div>
-                    </li>
-                    <li>
-                        <h3 class='menu-item-title text-primary-400 fw-bold'>Spicy Miso</h3>
-                        <div class='menu-item-description'>rich chicken broth / roasted garlic miso / spicy pork meatballs / corn / bean sprouts / ajitama / goma / negi</div>
-                        <div class='menu-item-price'>$14.00</div>
-                    </li>
-                    <li>
-                        <h3 class='menu-item-title text-primary-400 fw-bold'>Yasai (V)</h3>
-                        <div class='menu-item-description'>vegan broth / tofu / roasted tomato / mushrooms / fried shallots / negi / (gf noodles available)</div>
-                        <div class='menu-item-price'>$16.00</div>
-                    </li>
-                    <li>
-                        <h3 class='menu-item-title text-primary-400 fw-bold'>Kare Mazemen</h3>
-                        <div class='menu-item-description'>thick noodles / brothless / house-made curry sauce / chicken confit / beet pickled ginger / negi / goma</div>
-                        <div class='menu-item-price'>$16.00</div>
-                    </li>
-                    <li>
-                        <h3 class='menu-item-title text-primary-400 fw-bold'>Mushroom Mazemen (V)</h3>
-                        <div class='menu-item-description'>thick noodles / brothless / mushroom sauce / beet pickled ginger / negi / fried shallots</div>
-                        <div class='menu-item-price'>$14.00</div>
-                    </li>
-                    <li>
-                        <h3 class='menu-item-title text-primary-400 fw-bold'>Chilled Ramen</h3>
-                        <div class='menu-item-description'>chilled noodles / brothless / sesame dressing / shrimp / surimi / mustard greens / negi / fried shallots / vegan available</div>
-                        <div class='menu-item-price'>$7.00</div>
-                    </li>
-                    <li>
-                        <h3 class='menu-item-title text-primary-400 fw-bold'>Kid Ramen</h3>
-                        <div class='menu-item-description'>rich chicken broth & noodles only / vegan available</div>
-                        <div class='menu-item-price'>$6.00</div>
+                    <?php 
+                        $ramen_dishes = array(
+                            'post_type' =>'dish'
+                        );
+                        $menu_query = new WP_Query($ramen_dishes);
+
+                        // Loop through posts and display them on the menu list
+
+                        while($menu_query->have_posts()) { 
+                            $menu_query->the_post(); ?>
+                            <h3 class='menu-item-title text-primary-400 fw-bold'><?php the_title(); ?></h3>
+                            <div class='menu-item-description'><?php the_excerpt();?></div>
+                            <div class='menu-item-price'>$15.00</div>
+                        <?php } ?>
                     </li>
                 </ul>
             </div>

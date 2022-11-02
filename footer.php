@@ -33,9 +33,9 @@
             </address>
             <div>(444) 444-4444</div>
             <div class="social-icons">
-                <div class='social-icon_container'><img src="<?php echo get_template_directory_uri();?>/images/facebook-icon.svg"></div>
-                <div class='social-icon_container'><img src="<?php echo get_template_directory_uri();?>/images/twitter-icon.svg"></div>
-                <div class='social-icon_container'><img src="<?php echo get_template_directory_uri();?>/images/instagram-icon.svg"></div>
+                <a href="#"> <div class='social-icon_container'><img src="<?php echo get_template_directory_uri();?>/images/facebook-icon.svg"></div></a>
+                <a href="#"> <div class='social-icon_container'><img src="<?php echo get_template_directory_uri();?>/images/twitter-icon.svg"></div></a>
+                <a href="#"> <div class='social-icon_container'><img src="<?php echo get_template_directory_uri();?>/images/instagram-icon.svg"></div></a>
             </div>
         </div>
     </div>
