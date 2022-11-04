@@ -20,7 +20,7 @@
                 </div>
             </div>
             <nav>
-                <h1 class="logo fw-bold"><a href="#">SHOYU RAMEN</a></h1>
+                <h1 class="logo fw-bold"><a href="<?php echo site_url();?>">SHOYU RAMEN</a></h1>
                 <div class="mobile-navigation">
                     <svg class="mobile-hamburger" viewBox="0 0 100 80" width="40" height="40">
                         <rect width="70" height="10"></rect>
@@ -29,7 +29,7 @@
                     </svg>
                 </div>
                 <ul>
-                    <li class="fw-light" ><a href="#">HOME</a></li>
+                    <li class="fw-light" ><a href="<?php echo site_url();?>">HOME</a></li>
                     <li class="fw-light"><a href="#">ABOUT</a></li>
                     <li class="fw-light"><a href="#">RESERVATION</a></li>
                     <li class="fw-light"><a href="#">HOURS & LOCATION</a></li>
@@ -38,7 +38,7 @@
             <nav>
                 <div id='mobile-nav-container'>
                     <ul class='mobile-nav-list'>
-                        <li class="fw-light" ><a href="#">HOME</a></li>
+                        <li class="fw-light" ><a href="<?php echo site_url();?>">HOME</a></li>
                         <li class="fw-light"><a href="#">ABOUT</a></li>
                         <li class="fw-light"><a href="#">RESERVATION</a></li>
                         <li class="fw-light"><a href="#">HOURS & LOCATION</a></li>
