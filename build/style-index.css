@@ -38,7 +38,7 @@ footer {
 
 /* General Styling */
 
-header {
+.hero {
     background-image: url('/wp-content/themes/shoyu-ramen/images/hero-bg-small.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -254,7 +254,7 @@ footer > div:not(:last-child)  {
 
     /* General Styles */
 
-    header {
+    .hero {
         background-image: url('/wp-content/themes/shoyu-ramen/images/hero-bg-large.jpg');
         background-repeat: no-repeat;
         background-size: cover;
