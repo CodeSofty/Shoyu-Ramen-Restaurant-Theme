@@ -30,18 +30,20 @@
                 </div>
                 <ul>
                     <li class="fw-light" ><a href="<?php echo site_url();?>">HOME</a></li>
-                    <li class="fw-light"><a href="#">ABOUT</a></li>
-                    <li class="fw-light"><a href="#">RESERVATION</a></li>
-                    <li class="fw-light"><a href="#">HOURS & LOCATION</a></li>
+                    <li class="fw-light"><a href="<?php echo site_url('/about')?>">ABOUT</a></li>
+                    <li class="fw-light"><a href="<?php echo site_url('/menu')?>">MENU</a></li>
+                    <li class="fw-light"><a href="<?php echo site_url('/reservation')?>">RESERVATION</a></li>
+                    <li class="fw-light"><a href="<?php echo site_url('#location')?>">HOURS & LOCATION</a></li>
                 </ul>
             </nav>
             <nav>
                 <div id='mobile-nav-container'>
                     <ul class='mobile-nav-list'>
                         <li class="fw-light" ><a href="<?php echo site_url();?>">HOME</a></li>
-                        <li class="fw-light"><a href="#">ABOUT</a></li>
-                        <li class="fw-light"><a href="#">RESERVATION</a></li>
-                        <li class="fw-light"><a href="#">HOURS & LOCATION</a></li>
+                        <li class="fw-light"><a href="<?php echo site_url('/about')?>">ABOUT</a></li>
+                        <li class="fw-light"><a href="<?php echo site_url('/menu')?>">MENU</a></li>
+                        <li class="fw-light"><a href="<?php echo site_url('/reservation')?>">RESERVATION</a></li>
+                        <li class="fw-light"><a href="<?php echo site_url('#location')?>">HOURS & LOCATION</a></li>
                     </ul>
                 </div>
             </nav>

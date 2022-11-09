@@ -8,7 +8,7 @@
         </div>
     </div>
 
-    <div class="col-1">
+    <div class="col-1" id="location">
         <h3 class="text-accent-800 fw-bold">Business Hours </h3>
         <div class="footer_hours"> 
             <div class="footer_hours_leftside">
