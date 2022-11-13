@@ -1,7 +1,6 @@
 /* Mobile */
 
 
-
 /* Layout Styles  */
 
 .wrapper {
@@ -43,6 +42,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
+    position: relative;
 }
 
 body {
@@ -52,33 +52,27 @@ body {
     color: var(--clr-primary-400);
 }
 
-#mobile-nav-container {
-    height: 100vh;
-    width: 100%;
+#mobile-nav {
     background-color: darkslategrey;
     z-index: 1000;
-    position: relative;
-}
-
-#mobile-nav-container .mobile-nav-list {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom:0;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 100%;
+    align-items: center;
+} 
+
+#mobile-nav .mobile-nav-list {
+    display: flex;
+    flex-direction: column;
 }
 
 .mobile-nav-list li {
     font-size: 1.5rem;
     margin: 20px;
-}
-
-
-.hero {
-    height: 100%;
-    position: relative;
 }
 
 .hero-text {
@@ -253,6 +247,10 @@ footer > div:not(:last-child)  {
 
 
     /* General Styles */
+
+    #mobile-nav {
+        display: none;
+    }
 
     .hero {
         background-image: url('/wp-content/themes/shoyu-ramen/images/hero-bg-large.jpg');
