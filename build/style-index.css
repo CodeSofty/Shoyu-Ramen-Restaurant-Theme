@@ -1,5 +1,6 @@
 /* Mobile */
 
+
 /* Layout Styles  */
 
 .wrapper {
@@ -51,7 +52,7 @@ body {
     color: var(--clr-primary-400);
 }
 
-#mobile-nav {
+.mobile-nav {
     background-color: darkslategrey;
     z-index: 1000;
     position: fixed;
@@ -59,13 +60,17 @@ body {
     left: 0;
     right: 0;
     bottom:0;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
-    display: none;
 } 
 
-#mobile-nav .mobile-nav-list {
+.active {
+    display: flex;
+}
+
+
+.mobile-nav .mobile-nav-list {
     display: flex;
     flex-direction: column;
 }
@@ -261,7 +266,7 @@ footer > div:not(:last-child)  {
 
     /* General Styles */
 
-    #mobile-nav {
+    .mobile-nav {
         display: none;
     }
 
