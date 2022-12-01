@@ -4,9 +4,9 @@
         <div class="about-left-side flex-row col-reverse">
             <div class='image-container'>
                 <picture>
-                    <source srcset="<?php echo get_template_directory_uri();?>/images/about-restaurant-large.jpg" alt="interior picture of a nice restaurant" media="(min-width: 650px)">
-                    <source srcset="<?php echo get_template_directory_uri();?>/images/about-restaurant-small.jpg" alt="interior picture of a nice restaurant" media="(min-width: 300px)">
-                    <img src="<?php echo get_template_directory_uri();?>/images/about-restaurant-small.jpg" alt="interior picture of a nice restaurant">
+                    <source srcset="<?php  the_post_thumbnail('about-image')?>" alt="interior picture of a nice restaurant" media="(min-width: 650px)">
+                    <source srcset="<?php  the_post_thumbnail('about-image')?>" alt="interior picture of a nice restaurant" media="(min-width: 300px)">
+                    <img src="<?php  the_post_thumbnail('about-image')?>" alt="interior picture of a nice restaurant">
                 </picture>
             </div>
             <div class="about-text flex-col">
@@ -31,9 +31,9 @@
                 </div>
                 <div class='image-container'>
                     <picture>
-                    <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-cooking-large.jpg" alt="a close up of cooking noodles in a pan" media="(min-width: 650px)">
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/images/about-cooking-small.jpg" alt="a close up of cooking noodles in a pan" media="(min-width: 300px)">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/about-cooking-small.jpg" alt="a close up of cooking noodles in a pan">
+                    <source srcset="<?php  the_post_thumbnail('about-image')?>" alt="a close up of cooking noodles in a pan" media="(min-width: 650px)">
+                        <source srcset="<?php  the_post_thumbnail('about-image')?>" alt="a close up of cooking noodles in a pan" media="(min-width: 300px)">
+                        <img src="<?php  the_post_thumbnail('about-image')?>" alt="a close up of cooking noodles in a pan">
                     </picture>
                 </div>
             </div>
