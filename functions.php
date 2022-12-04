@@ -1,5 +1,5 @@
-<!-- WP Functions -->
 <?php 
+
 function shoyu_ramen_files () {
     wp_enqueue_script('shoyu_ramen_js', get_template_directory_uri() . '/js/app.js', array('jquery'),'1.0', true);
     wp_enqueue_style('shoyu_ramen_reset_styles', get_theme_file_uri('/build/reset.css'));
@@ -10,10 +10,17 @@ function shoyu_ramen_files () {
 
 add_action('wp_enqueue_scripts', 'shoyu_ramen_files');
 
+
+// Load theme support hooks
+
 function shoyu_theme_features() {
     add_theme_support('title-tag');
-    add_theme_support('post-thumbnails'); 
+    add_theme_support('post-thumbnails');
 }
 
 add_action('after_setup_theme', 'shoyu_theme_features');
 ?>
+
+
+
+
