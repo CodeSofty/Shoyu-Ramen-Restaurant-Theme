@@ -12,8 +12,7 @@ add_action('wp_enqueue_scripts', 'shoyu_ramen_files');
 
 function shoyu_theme_features() {
     add_theme_support('title-tag');
-    add_theme_support( 'post-thumbnails' ); 
-    add_image_size( 'about-image', 550, 309.8, true);
+    add_theme_support('post-thumbnails'); 
 }
 
 add_action('after_setup_theme', 'shoyu_theme_features');
