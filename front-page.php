@@ -1,18 +1,20 @@
-<!-- About -->
-    <?php get_header(); ?>
+
+<?php get_header(); ?>
 
 
 <?php 
 if ( have_posts() ) {
 	while ( have_posts() ) {
 		the_post(); 
-            $about = get_field('about', 104);
-            $firstRow = $about['first_row'];  ?>
+            $about = get_field('about');
+            $firstRow = $about['first_row']; 
+            $secondRow = $about['second_row'];
+            ?>
 
     <section id="about-section">
         <div class="about-left-side flex-row col-reverse">
             <div class='image-container'>
-                <img src="<?php $firstRow['first_row_image']['url']?>">
+                <img src="<?php echo $firstRow['first_row_image']['url']?>">
                 <!-- <picture>
                     <source srcset="" alt="interior picture of a nice restaurant" media="(min-width: 650px)">
                     <source srcset="" alt="interior picture of a nice restaurant" media="(min-width: 300px)">
@@ -32,7 +34,7 @@ if ( have_posts() ) {
                     </p>
                 </div>
                 <div class='image-container'>
-                    <img src="<?php $secondRow['second_row_image']['url']?>">
+                    <img src="<?php echo $secondRow['second_row_image']['url']?>">
                     <!-- <picture> -->
                     <!-- <source srcset="<?php  the_post_thumbnail('about-image')?>" alt="a close up of cooking noodles in a pan" media="(min-width: 650px)">
                         <source srcset="<?php  the_post_thumbnail('about-image')?>" alt="a close up of cooking noodles in a pan" media="(min-width: 300px)">
@@ -93,6 +95,7 @@ if ( have_posts() ) {
             </div>
         </div>
     </section>
+    
 <!-- Reservation -->
     <section id="reservation-section">
         <div class="hero-centered-textbox">
