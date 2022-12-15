@@ -11,6 +11,16 @@
     gap: 20px;
 }
 
+form label {
+    position: fixed;
+    transform: translateX(-1000px);
+}
+
+form input {
+    margin: 10px;
+    padding: 1em;
+}
+
 
 header {
     grid-column: span 4;
@@ -38,7 +48,6 @@ footer {
 /* General Styling */
 
 .hero {
-    background-image: url('/wp-content/themes/shoyu-ramen/images/hero-bg-small.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
@@ -169,9 +178,6 @@ ul {
     height: 300px;
 }
 
-#reservation-section .hero-text {
-    display: inline;
-}
 
 
 #menu-section{
@@ -195,12 +201,6 @@ ul {
 }
 
 
-button {
-    background-color: var(--clr-accent-400);
-    padding: .7em 1em;
-    border: none;
-    border-radius: 5px;
-}
 
 footer {
     text-align: center;
@@ -271,7 +271,6 @@ footer > div:not(:last-child)  {
     }
 
     .hero {
-        background-image: url('/wp-content/themes/shoyu-ramen/images/hero-bg-large.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         height: 600px;
@@ -297,10 +296,15 @@ footer > div:not(:last-child)  {
 
     .hero-text {
         display: block;
+        margin-bottom: 1.5rem;
     }
 
     .hero-action-bttn {
         display: inline;
+        background-color: var(--clr-accent-400);
+        padding: 1em 1em;
+        border: none;
+        border-radius: 5px;
     }
 
     .flex-row {

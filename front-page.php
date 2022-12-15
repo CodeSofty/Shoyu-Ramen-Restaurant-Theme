@@ -101,7 +101,7 @@ if ( have_posts() ) {
         <div class="hero-centered-textbox">
             <h2 class="hero-text text-neutral-100 fs-primary-heading fw-bold">Hungry? Make Your Dining Reservation Today!</h2>
             <div class="centered_button_box">
-                <button class="text-neutral-100 fw-bold" >Make Reservation</button>
+            <a class="hero-action-bttn text-neutral-100 fw-bold" href="<?php echo site_url('/reservation') ?>"> Make Reservation</a>
             </div>
         </div>
     </section>

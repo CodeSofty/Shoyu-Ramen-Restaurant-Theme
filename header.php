@@ -10,7 +10,8 @@
 <body>
     <div class="wrapper">
     <header>
-        <div class="hero"> 
+        
+        <div class="hero"  <?php if(is_front_page()) { ?>style= "background-image:url('/wp-content/themes/shoyu-ramen/images/hero-bg-small.jpg')"<?php }?>> 
             <!-- hero_background_image -->
         <nav>
                 <h1 class="logo fw-bold"><a href="<?php echo site_url();?>">SHOYU RAMEN</a></h1>
@@ -49,7 +50,7 @@
                     Tasty, locally sourced, and authentically cooked ramen dishes
                 </h2>
                 <div class="centered_button_box">
-                    <button class="hero-action-bttn text-neutral-100 fw-bold" >Make Reservation</button>
+                <a class="hero-action-bttn text-neutral-100 fw-bold" href="<?php echo site_url('/reservation') ?>"> Make Reservation</a>
                 </div>
             </div>
         </div>
