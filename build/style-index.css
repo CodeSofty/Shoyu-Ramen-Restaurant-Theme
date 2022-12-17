@@ -30,6 +30,10 @@ header {
     grid-column: span 4;
 }
 
+#generic-section {
+    grid-column: span 4;
+}
+
 #menu-section {
     grid-column: span 4;
 }
@@ -136,6 +140,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 5px;
+    background-color: black;
 }
 
 nav ul {
@@ -171,7 +176,6 @@ ul {
 }
 
 #reservation-section {
-    background-image: url('/wp-content/themes/shoyu-ramen/images/reservation-bg-small.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -248,6 +252,10 @@ footer > div:not(:last-child)  {
     #about-section {
         grid-column: span 12;
     } 
+
+    #generic-section {
+        grid-column: span 12;
+    }
     
     #menu-section {
         grid-column: span 12;

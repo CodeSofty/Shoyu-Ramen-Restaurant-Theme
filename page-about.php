@@ -1,5 +1,13 @@
 
 <?php get_header(); ?>
+
+<?php if ( have_posts() ) {
+	while ( have_posts() ) {
+		the_post();
+        $about = get_field('about');
+        $firstRow =  get_field['first_row'];
+        $SecondRow = get_field['second_row'];
+            ?>
 <section id="about-section">
         <div class="about-left-side flex-row col-reverse">
             <div class='image-container'>
@@ -10,7 +18,7 @@
                 </picture>
             </div>
             <div class="about-text flex-col">
-                <h2 class="about-heading text-neutral-900 fs-secondary-heading fw-regular">Our Passion</h2>
+                <h2 class="about-heading text-neutral-900 fs-secondary-heading fw-regular"><?php echo $firstRow['row_heading']?></h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida felis at tellus tempus convallis 
                     maximus a dui. Fusce porta urna vitae ullamcorper facilisis. Fusce ipsum felis, tempus quis cursus eleifend, 
                     accumsan non sem. In auctor ac leo in imperdiet. Etiam rutrum, dolor quis porta dignissim, sapien leo porta 
@@ -38,4 +46,8 @@
                 </div>
             </div>
     </section>
+
+<?php    } 
+
+}?>
 <?php get_footer(); ?>

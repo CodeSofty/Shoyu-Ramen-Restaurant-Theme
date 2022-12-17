@@ -10,10 +10,7 @@
 <body>
     <div class="wrapper">
     <header>
-        
-        <div class="hero"  <?php if(is_front_page()) { ?>style= "background-image:url('/wp-content/themes/shoyu-ramen/images/hero-bg-small.jpg')"<?php }?>> 
-            <!-- hero_background_image -->
-        <nav>
+    <nav>
                 <h1 class="logo fw-bold"><a href="<?php echo site_url();?>">SHOYU RAMEN</a></h1>
                 <div class="mobile-navigation">
                     <svg class="mobile-hamburger" id="mobile_svg" viewBox="0 0 100 80" width="40" height="40">
@@ -44,7 +41,9 @@
                     </div>
                 </div>
             </nav>
-            <?php if(is_front_page()) { ?>
+        <?php if(is_front_page()) { ?>
+        <div class="hero" style= "background-image:url('/wp-content/themes/shoyu-ramen/images/hero-bg-small.jpg')"> 
+            <!-- hero_background_image -->
             <div class="hero-centered-textbox">
                 <h2 class="hero-text text-neutral-100 fs-primary-heading fw-bold margin-large">
                     Tasty, locally sourced, and authentically cooked ramen dishes
