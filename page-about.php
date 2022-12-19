@@ -5,8 +5,8 @@
 	while ( have_posts() ) {
 		the_post();
         $about = get_field('about');
-        $firstRow =  get_field['first_row'];
-        $SecondRow = get_field['second_row'];
+        $firstRow =  get_field('first_row');
+        $SecondRow = get_field('second_row');
             ?>
 <section id="about-section">
         <div class="about-left-side flex-row col-reverse">
