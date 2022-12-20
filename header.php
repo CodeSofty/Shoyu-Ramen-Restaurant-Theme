@@ -27,8 +27,8 @@
                     <li class="fw-light"><a href="<?php echo site_url('#location')?>">HOURS & LOCATION</a></li>
                 </ul>
             </nav>
-            <nav>
-                <div class='mobile-nav'>
+            <nav class='mobile-nav'>
+                <div>
                     <ul class='mobile-nav-list'>
                         <li class="fw-light" ><a href="<?php echo site_url();?>">HOME</a></li>
                         <li class="fw-light"><a href="<?php echo site_url('/about')?>">ABOUT</a></li>

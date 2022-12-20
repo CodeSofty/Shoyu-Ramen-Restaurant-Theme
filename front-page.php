@@ -102,11 +102,11 @@ if ( have_posts() ) {
             $reservationInfo = get_field('reservation');
             ?>
 <!-- Reservation -->
-    <section id="reservation-section" style="<?php echo $reservationInfo['reservation_background_image']['url']?>">
+    <section id="reservation-section" style="background-image: url(<?php echo $reservationInfo['reservation_background_image']['url']?>)">
         <div class="hero-centered-textbox">
             <h2 class="hero-text text-neutral-100 fs-primary-heading fw-bold"><?php echo $reservationInfo['large_text_field']?></h2>
             <div class="centered_button_box">
-            <a class="hero-action-bttn text-neutral-100 fw-bold" href="<?php echo site_url('/reservation') ?>"><?php echo $reservationInfo['call_to_action_text']?></a>
+                <a class="hero-action-bttn text-neutral-100 fw-bold" href="<?php echo site_url('/reservation') ?>"> Make Reservation</a>
             </div>
         </div>
     </section>
