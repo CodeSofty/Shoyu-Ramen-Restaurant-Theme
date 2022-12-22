@@ -1,8 +1,10 @@
 // Mobile nav funciton
 
 const mobileSvg = document.getElementById('mobile_svg');
-const mobileNav = document.getElementsByClassName('mobile-nav')[0];
+const mobileNav = document.getElementsByClassName('main_navigation')[0];
 const mobileCloseOut = document.getElementById('close-out');
+const navLogo = document.getElementById('nav_logo');
+const navList = document.getElementsByClassName('nav_list')[0];
 
 
 mobileSvg.addEventListener('click', () => {
@@ -16,4 +18,15 @@ mobileCloseOut.addEventListener('click', () => {
 
 function toggle_display() {
     mobileNav.classList.toggle('active');
+    mobileCloseOut.classList.toggle('hidden');
+    mobileSvg.classList.toggle('hidden');
+    navLogo.classList.toggle('hidden');
+    navList.classList.toggle('active');
+
 };
+
+
+// nav ul toggle display none
+// toggle display on "close-out"
+// hide logo and svg
+// disable scroll while showing

@@ -10,37 +10,29 @@
 <body>
     <div class="wrapper">
     <header>
-    <nav>
-                <h1 class="logo fw-bold"><a href="<?php echo site_url();?>">SHOYU RAMEN</a></h1>
-                <div class="mobile-navigation">
-                    <svg class="mobile-hamburger" id="mobile_svg" viewBox="0 0 100 80" width="40" height="40">
-                        <rect width="70" height="10"></rect>
-                        <rect y="20" width="70" height="10"></rect>
-                        <rect y="40" width="70" height="10"></rect>
-                    </svg>
-                </div>
-                <ul>
-                    <li class="fw-light" ><a href="<?php echo site_url();?>">HOME</a></li>
-                    <li class="fw-light"><a href="<?php echo site_url('/about')?>">ABOUT</a></li>
-                    <li class="fw-light"><a href="<?php echo site_url('/menu')?>">MENU</a></li>
-                    <li class="fw-light"><a href="<?php echo site_url('/reservation')?>">RESERVATION</a></li>
-                    <li class="fw-light"><a href="<?php echo site_url('#location')?>">HOURS & LOCATION</a></li>
-                </ul>
-            </nav>
-            <nav class='mobile-nav'>
-                <div>
-                    <ul class='mobile-nav-list'>
-                        <li class="fw-light" ><a href="<?php echo site_url();?>">HOME</a></li>
-                        <li class="fw-light"><a href="<?php echo site_url('/about')?>">ABOUT</a></li>
-                        <li class="fw-light"><a href="<?php echo site_url('/menu')?>">MENU</a></li>
-                        <li class="fw-light"><a href="<?php echo site_url('/reservation')?>">RESERVATION</a></li>
-                        <li class="fw-light"><a href="<?php echo site_url('#location')?>">HOURS & LOCATION</a></li>
-                    </ul>
-                    <div id="close-out">
-                        X
-                    </div>
-                </div>
-            </nav>
+    <nav class="main_navigation">
+        <div class="nav_flex-row"> 
+            <h1 id="nav_logo" class="logo fw-bold"><a href="<?php echo site_url();?>">SHOYU RAMEN</a></h1>
+            <div class="mobile-navigation">
+                <svg class="mobile-hamburger" id="mobile_svg" viewBox="0 0 100 80" width="40" height="40">
+                    <rect width="70" height="10"></rect>
+                    <rect y="20" width="70" height="10"></rect>
+                    <rect y="40" width="70" height="10"></rect>
+                </svg>
+            </div>
+        </div>
+        <ul class="nav_list hidden">
+            <li class="fw-light" ><a href="<?php echo site_url();?>">HOME</a></li>
+            <li class="fw-light"><a href="<?php echo site_url('/about')?>">ABOUT</a></li>
+            <li class="fw-light"><a href="<?php echo site_url('/menu')?>">MENU</a></li>
+            <li class="fw-light"><a href="<?php echo site_url('/reservation')?>">RESERVATION</a></li>
+            <li class="fw-light"><a href="<?php echo site_url('#location')?>">HOURS & LOCATION</a></li>
+        </ul>
+        <div id="close-out" class="hidden">
+                X
+        </div>
+    </nav>
+
         <?php if(is_front_page()) { ?>
         <div class="hero" style= "background-image:url('/wp-content/themes/shoyu-ramen/images/hero-bg-small.jpg')"> 
             <!-- hero_background_image -->
