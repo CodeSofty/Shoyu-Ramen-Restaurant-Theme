@@ -28,12 +28,30 @@
         --fw-regular: 400; /* Outfit only */
         --fw-bold: 700;     /* Roboto and Outfit */
     }
+
+
+    @media (min-width: 320px) {
+        :root {
+            --fs-primary-heading: 1.5rem;
+            --fs-secondary-heading: 1.5rem;
+        }
+    }
+
+
+    @media (min-width: 550px) {
+        :root {
+            --fs-primary-heading: 1.5rem;
+            --fs-secondary-heading: 1.5rem;
+        }
+    }
+
     
     @media (min-width: 700px) {
         :root {
             --fs-primary-heading: 3rem;
             --fs-secondary-heading: 2.5rem;
         }
+
     }
 
 

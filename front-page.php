@@ -3,6 +3,7 @@
 
 
 <?php 
+    // Loop through posts and display ACF fields
 if ( have_posts() ) {
 	while ( have_posts() ) {
 		the_post(); 
@@ -14,12 +15,12 @@ if ( have_posts() ) {
     <section id="about-section">
         <div class="about-left-side flex-row col-reverse">
             <div class='image-container'>
-                <img src="<?php echo $firstRow['first_row_image']['url']?>">
-                <!-- <picture>
-                    <source srcset="" alt="interior picture of a nice restaurant" media="(min-width: 650px)">
-                    <source srcset="" alt="interior picture of a nice restaurant" media="(min-width: 300px)">
-                    <img src="" alt="interior picture of a nice restaurant">
-                </picture> -->
+            <picture>
+                <source srcset="<?php echo $firstRow['first_row_image']['sizes']['about-image_smll']?>" alt="interior picture of a nice restaurant" media="(min-width: 650px)">
+                <source srcset="<?php echo $firstRow['first_row_image']['sizes']['about-image_lrg']?>" alt="interior picture of a nice restaurant" media="(min-width: 300px)">
+                <img src="<?php echo $firstRow['first_row_image']['url']?>" alt="interior picture of a nice restaurant">
+            </picture>
+
             </div>
             <div class="about-text flex-col">
                 <h2 class="about-heading text-neutral-900 fs-secondary-heading fw-regular"><?php $firstRowHeading = $about['first_row']['heading']; echo $firstRowHeading ?></h2>
@@ -34,18 +35,17 @@ if ( have_posts() ) {
                     </p>
                 </div>
                 <div class='image-container'>
-                    <img src="<?php echo $secondRow['second_row_image']['url']?>">
-                    <!-- <picture> -->
-                    <!-- <source srcset="<?php  the_post_thumbnail('about-image')?>" alt="a close up of cooking noodles in a pan" media="(min-width: 650px)">
-                        <source srcset="<?php  the_post_thumbnail('about-image')?>" alt="a close up of cooking noodles in a pan" media="(min-width: 300px)">
-                        <img src="<?php  the_post_thumbnail('about-image')?>" alt="a close up of cooking noodles in a pan"> -->
-                    <!-- </picture> -->
+                    <picture>
+                        <source srcset="<?php echo $secondRow['second_row_image']['sizes']['about-image_smll']?>" alt="a close up of cooking noodles in a pan" media="(min-width: 650px)">
+                        <source srcset="<?php echo $secondRow['second_row_image']['sizes']['about-image_lrg']?>" alt="a close up of cooking noodles in a pan" media="(min-width: 300px)">
+                        <img src="<?php echo $secondRow['second_row_image']['url']?>" alt="a close up of cooking noodles in a pan">
+                    </picture>
                 </div>
             </div>
     </section>
 
-<?php } // end while
-} // end if
+<?php } 
+} 
 ?>
 
 
@@ -96,7 +96,9 @@ if ( have_posts() ) {
         </div>
     </section>
 
-<?php  if ( have_posts() ) {
+<?php  
+    // Loop through posts and display ACF fields
+if ( have_posts() ) {
 	while ( have_posts() ) {
 		the_post(); 
             $reservationInfo = get_field('reservation');
@@ -106,7 +108,7 @@ if ( have_posts() ) {
         <div class="hero-centered-textbox">
             <h2 class="hero-text text-neutral-100 fs-primary-heading fw-bold"><?php echo $reservationInfo['large_text_field']?></h2>
             <div class="centered_button_box">
-                <a class="hero-action-bttn text-neutral-100 fw-bold" href="<?php echo site_url('/reservation') ?>"> Make Reservation</a>
+                <a class="hero-action-bttn text-neutral-100 fw-bold" href="<?php echo site_url('/reservation') ?>"><?php echo $reservationInfo['call_to_action_text'] ?></a>
             </div>
         </div>
     </section>
