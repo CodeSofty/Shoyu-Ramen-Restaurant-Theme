@@ -3,48 +3,17 @@
 
 
 <?php 
-    // Loop through posts and display ACF fields
+    // Use template part to display About Section Content
 if ( have_posts() ) {
 	while ( have_posts() ) {
-		the_post(); 
-            $about = get_field('about');
-            $firstRow = $about['first_row']; 
-            $secondRow = $about['second_row'];
-            ?>
-
-    <section id="about-section">
-        <div class="about-left-side flex-row col-reverse">
-            <div class='image-container'>
-            <picture>
-                <source srcset="<?php echo $firstRow['first_row_image']['sizes']['about-image_smll']?>" alt="interior picture of a nice restaurant" media="(min-width: 650px)">
-                <source srcset="<?php echo $firstRow['first_row_image']['sizes']['about-image_lrg']?>" alt="interior picture of a nice restaurant" media="(min-width: 300px)">
-                <img src="<?php echo $firstRow['first_row_image']['url']?>" alt="interior picture of a nice restaurant">
-            </picture>
-
-            </div>
-            <div class="about-text flex-col">
-                <h2 class="about-heading text-neutral-900 fs-secondary-heading fw-regular"><?php $firstRowHeading = $about['first_row']['heading']; echo $firstRowHeading ?></h2>
-                <p><?php $firstRowText = $about['first_row']['first_row_text']; echo $firstRowText ?>
-                </p>
-            </div>
-        </div>
-        <div class="about-right-side flex-row">
-            <div class=" about-text flex-col">
-                    <h2 class="about-heading text-neutral-900 fs-secondary-heading fw-regular"><?php $secondRowHeading = $about['second_row']['heading']; echo $secondRowHeading ?></h2>
-                    <p><?php $secondRowText = $about['second_row']['second_row_text']; echo $secondRowText ?>
-                    </p>
-                </div>
-                <div class='image-container'>
-                    <picture>
-                        <source srcset="<?php echo $secondRow['second_row_image']['sizes']['about-image_smll']?>" alt="a close up of cooking noodles in a pan" media="(min-width: 650px)">
-                        <source srcset="<?php echo $secondRow['second_row_image']['sizes']['about-image_lrg']?>" alt="a close up of cooking noodles in a pan" media="(min-width: 300px)">
-                        <img src="<?php echo $secondRow['second_row_image']['url']?>" alt="a close up of cooking noodles in a pan">
-                    </picture>
-                </div>
-            </div>
-    </section>
-
-<?php } 
+		the_post();
+        $args =  array (
+            $about = get_field('about'),
+            'firstrow' =>  $about['first_row'],
+            'secondrow' => $about['second_row']
+        );
+        get_template_part('template-parts/content-about', null,  $args );
+    } 
 } 
 ?>
 
