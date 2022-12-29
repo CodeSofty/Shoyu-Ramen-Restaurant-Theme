@@ -24,9 +24,3 @@ function toggle_display() {
     navList.classList.toggle('active');
 
 };
-
-
-// nav ul toggle display none
-// toggle display on "close-out"
-// hide logo and svg
-// disable scroll while showing
