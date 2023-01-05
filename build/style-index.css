@@ -1,3 +1,31 @@
+/* Animations */
+.about-left-side {
+    transition: 3s;
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+
+.about-left-side.left-fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.about-right-side {
+    transition: 2s;
+    opacity: 0;
+    transform: translateX(100px);
+}
+
+
+
+.about-right-side.right-fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
 /* Mobile */
 
 
@@ -56,6 +84,7 @@ header {
 #about-section {
     grid-column: span 4;
 }
+
 
 #generic-section {
     grid-column: span 4;
@@ -143,16 +172,6 @@ body {
     border-radius: 5px;
     font-size: .8rem;
 }
-
-
-
-/* .hero-action-bttn {
-    display: inline;
-    background-color: var(--clr-accent-400);
-    padding: 1em 1em;
-    border: none;
-    border-radius: 5px;
-} */
 
 
 .mobile-hamburger {
