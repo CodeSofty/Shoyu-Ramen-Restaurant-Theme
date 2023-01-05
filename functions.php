@@ -7,7 +7,7 @@ function shoyu_ramen_files () {
     wp_enqueue_script('shoyu_theme_scroll_js', get_template_directory_uri() . '/js/scrollmagic/uncompressed/ScrollMagic.js', array('jquery' ), null, true);
     // Scroll magic plugin files
     wp_enqueue_script('shoyu_theme_scroll_magic_debug', get_template_directory_uri() . '/js/scrollmagic/uncompressed/plugins/debug.addIndicators.js', null, null, true);
-    wp_enqueue_script('scroll_magic_main_module', get_template_directory_uri() . '/js/scrollmagic/uncompressed/ScrollMagic.js', array('shoyu_theme_scroll_magic_debug','shoyu_theme_scroll_magic_velocity_plugin', 'shoyu_theme_scroll_magic_gsap_plugin'), null, true);
+    wp_enqueue_script('scroll_magic_main_module', get_template_directory_uri() . '/js/scrollmagic/minified/ScrollMagic.min.js', array('shoyu_theme_scroll_magic_debug','shoyu_theme_scroll_magic_velocity_plugin', 'shoyu_theme_scroll_magic_gsap_plugin'), null, true);
     // Theme scroll magic controller JS
     wp_enqueue_script('shoyu_theme_scroll_magic_controller', get_template_directory_uri() . '/js/scrollmagic.js', array('jquery'), null, true);
     // Theme styling and fonts

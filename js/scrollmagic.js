@@ -1,7 +1,7 @@
 var controller = new ScrollMagic.Controller();
 
 var scene = new ScrollMagic.Scene ({
-    triggerElement: ".about-left-side"
+    triggerElement: "#about-section"
 })
     .setClassToggle(".about-left-side", "left-fade-in")
     .addIndicators()
@@ -9,7 +9,7 @@ var scene = new ScrollMagic.Scene ({
     .addTo(controller)
 
 var scene = new ScrollMagic.Scene({
-    triggerElement:".about-right-side"
+    triggerElement:"#about-section"
 })
     .setClassToggle(".about-right-side", "right-fade-in")
     .addIndicators()
