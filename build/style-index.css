@@ -138,12 +138,12 @@ body {
     top: 10px;
     right: 15px;
     font-size: 1.3rem;
-    color: #FFF;
+    color: var(--clr-neutral-100);
     cursor: pointer;
 }
 
 #close-out:hover {
-    color: grey;
+    color: var(--clr-primary-400);
 }
 
 .hero-text {
@@ -171,8 +171,18 @@ body {
     border: none;
     border-radius: 5px;
     font-size: .8rem;
+    box-shadow: 2px 2px var(--clr-accent-500);
 }
 
+.hero-action-bttn:active {
+    box-shadow: 0 0px var(--clr-accent-300);
+    border: 1px solid var(--clr-accent-500);
+}
+
+.hero-action-bttn:hover {
+    cursor: pointer;
+    background-color: var(--clr-accent-200);
+}
 
 .mobile-hamburger {
     fill: var(--clr-neutral-100);

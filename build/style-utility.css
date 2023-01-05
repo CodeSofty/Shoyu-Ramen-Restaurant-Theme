@@ -6,7 +6,10 @@
         --clr-primary-400:  rgb(162, 162, 162); /*  Body text    */
         --clr-neutral-100: hsl(0, 0%, 100%); /*   Nav and Header Logo   */
         --clr-neutral-900: hsl(0, 0%, 0%);   /*   Headings and Footer Logo  */
+        --clr-accent-200: hsl(4, 62%, 55%);
+        --clr-accent-300: hsl(0 , 100% , 50%);
         --clr-accent-400: 	hsl(4, 62%, 53%);
+        --clr-accent-500: hsl(0 , 68% , 42%);
         --clr-accent-800:  hsl(0, 0%, 38%); /*  Body text    */
     
     /*   Font Families   */
