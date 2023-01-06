@@ -7,13 +7,19 @@ knowledge and experience of WordPress theme development using template files, Th
 ## How This Project Was Designed
 
 Before coding I used Figma to design the basic feel and layout of the mobile layout for the front page.
+
 <p align="center">
-![Mobile Design](https://raw.githubusercontent.com/CodeSofty/Shoyu-Ramen-Restaurant-Theme/main/Design/Final-Mobile-Design.jpg)
+  <img src="https://raw.githubusercontent.com/CodeSofty/Shoyu-Ramen-Restaurant-Theme/main/Design/Final-Mobile-Design.jpg" />
 </p>
+
+
 I then used Figma to design the basic feel and layout of the desktop layout for the front page.
+
+
 <p align="center">
-![Desktop Design](https://raw.githubusercontent.com/CodeSofty/Shoyu-Ramen-Restaurant-Theme/main/Design/Final-Desktop-Design.jpg)
+  <img src="https://raw.githubusercontent.com/CodeSofty/Shoyu-Ramen-Restaurant-Theme/main/Design/Final-Desktop-Design.jpg" />
 </p>
+
 
 * While these designs were followed as closely as possible, there were a few adjustments made along the development
 process to make a better user experience. These changes were subtle UI/UX changes (box shadows for buttons, font sizing
