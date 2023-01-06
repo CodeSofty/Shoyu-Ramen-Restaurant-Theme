@@ -27,7 +27,7 @@ heirarchy and post manipulation. Template files were first hand coded and then a
 
 ### Installing and Using
 
-- Download WordPress locally, website here
+- Download WordPress locally
 
 - Get WordPress local dev environment up and running, [Flywheel](https://getflywheel.com/) is easy for this
 
